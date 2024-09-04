@@ -50,6 +50,8 @@ Your Honor, my opponent's reliance on the principle of attenuation is fundamenta
 
 To uphold the integrity of our legal system and ensure that constitutional rights are genuinely protected, both the coerced confession and the evidence derived from it must be suppressed. This action not only honors the defendant's rights but also reinforces the judiciary's commitment to upholding the rule of law. Thank you.
 
+**Correct answer:** B
+
 ## Debate 2
 
 Question: This question refers to the following information.
@@ -95,6 +97,8 @@ My opponent's focus on the fluidity of the Tao is noted but misses the essence o
 Contrary to Daoism's core teachings, \"The ways of Heaven are not invariable\" introduces a conditional, moralistic framework, suggesting rewards and punishments based on ethical behavior\u2014a concept more closely aligned with Confucianism. Daoism transcends such binaries, advocating for an unforced, natural state of being that flows harmoniously with the Tao.
 
 Therefore, \"The birds and beasts . . . enjoyed their existence according to their nature\" most accurately reflects the roots of Daoist philosophy, emphasizing the intrinsic, unforced harmony that Daoism cherishes. This makes it the more relevant and accurate phrase in capturing the essence of Daoist beliefs.
+
+**Correct answer:** B
 
 ## Debate 3
 
@@ -146,3 +150,5 @@ Person advocating for B:
 Honorable judges, while my opponent\u2019s argument holds merit in the narrow context of proton acceptance, it lacks the depth required for a comprehensive understanding of acid-base chemistry. The phosphate system is dynamic where H\u2082PO\u2084\u207b acts both as a proton donor and acceptor. When H\u2082PO\u2084\u207b accepts a proton, it indeed forms H\u2083PO\u2084. However, equally important is its role as a proton donor, forming HPO\u2084\u00b2\u207b. This dual functionality underscores the need to consider both aspects to truly understand its conjugate pairs.
 
 By focusing solely on H\u2083PO\u2084, my opponent overlooks the critical equilibrium involving HPO\u2084\u00b2\u207b. Recognizing HPO\u2084\u00b2\u207b as the conjugate base of H\u2082PO\u2084\u207b, and considering the complete equilibrium, provides a more accurate and holistic view of the chemical relationships. Thus, my position, which acknowledges the integral role of HPO\u2084\u00b2\u207b, is scientifically sound. I urge you to embrace this comprehensive approach and recognize the validity of my argument. Thank you.
+
+**Correct answer:** A
