@@ -39,7 +39,7 @@ OpenAIChatModelName = Literal[
     "ft:gpt-4o-mini-2024-07-18:elicit-experiments:4o-judge:9w1bJdWK",  # best of 1
     "ft:gpt-3.5-turbo-0125:elicit-experiments:35-judge:9w1pG4Fr",  # best of 1
     "ft:gpt-4o-mini-2024-07-18:elicit-experiments:4o-mini-judge:9w1iRtNB",  # best of 1
-    "ft:gpt-4o-2024-08-06:elicit-experiments:4o-judge:A0N2QXM6", # best of 1
+    "ft:gpt-4o-2024-08-06:elicit-experiments:4o-judge:A0N2QXM6",  # best of 1
     "ft:gpt-4o-2024-08-06:elicit-experiments:blind-judge-v0:A0N167Qb",
 ]
 
@@ -138,4 +138,4 @@ def complete(
             response_time=perf_counter() - start,
             model=request.model,
         )
-    return Response.parse_obj(result.json())
+    return Response.model_validate(result.json())

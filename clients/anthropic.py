@@ -5,7 +5,7 @@ from typing import Literal
 import requests
 from pydantic import BaseModel
 from pydantic import Field
-from pydantic import validator
+from pydantic import field_validator
 from structlog.stdlib import get_logger
 
 _logger = get_logger()
@@ -48,7 +48,7 @@ class Request(BaseModel):
     top_p: float = -1.0
     top_k: int = Field(default=-1, ge=-1)
 
-    @validator("top_p")
+    @field_validator("top_p")
     def validate_top_p(cls, top_p: float) -> float:
         if not (0 <= top_p <= 1) and top_p != -1:
             raise ValueError("top_p must be between 0 and 1")
@@ -97,4 +97,4 @@ def complete(
             response_time=perf_counter() - start,
             model=request.model,
         )
-    return Response.parse_obj(result.json())
+    return Response.model_validate(result.json())
