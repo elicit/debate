@@ -43,6 +43,8 @@ OpenAIChatModelName = Literal[
     "ft:gpt-4o-2024-08-06:elicit-experiments:blind-judge-v0:A0N167Qb",
 ]
 
+OpenAIReasoningModelName = Literal["o1-mini-2024-09-12", "o1-preview-2024-09-12"]
+
 OPENAI_MODEL_NAMES: tuple[OpenAIChatModelName, ...] = (
     "gpt-3.5-turbo",
     "gpt-3.5-turbo-0613",
@@ -70,6 +72,11 @@ class OpenAITextMessage(BaseModel):
     content: str
 
 
+class OpenAIReasoningMessage(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str
+
+
 class Request(BaseModel):
     model: OpenAIChatModelName
     messages: Sequence[OpenAITextMessage]
@@ -83,6 +90,11 @@ class Request(BaseModel):
     response_format: Mapping[Literal["type"], Literal["json_object", "text"]] = {
         "type": "text"
     }
+
+
+class ReasoningRequest(BaseModel):
+    model: OpenAIReasoningModelName
+    messages: Sequence[OpenAIReasoningMessage]
 
 
 class Usage(BaseModel):
@@ -104,7 +116,7 @@ class Response(BaseModel):
 
 
 def complete(
-    request: Request,
+    request: Request | ReasoningRequest,
     api_key: str,
     org_id: str | None,
     verbose: bool = False,
